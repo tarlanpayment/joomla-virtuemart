@@ -12,16 +12,6 @@
 	<files>
 		<filename plugin="tarlanpay">tarlanpay.php</filename>
 	</files>
-	<!--<params addpath="/administrator/components/com_virtuemart/elements">
-        <field name="checkConditionsCore" value="1" default="1" type="hidden"/>
-        <param type="spacer" default="Payment Config " level="level1" />
-        <param type="text" name="merchant_id"  size="50" label="merchant_id" default="" description="merchant_id_desc" />
-        <param type="text" name="secret_key"  size="50" label="secret_key" default="" description="secret_key_desc" />
-		<param name="test_mode" type="radio" default="1" label="test_mode" description="test_mode_desc" >
-            <option value="0">COM_VIRTUEMART_NO</option>
-            <option value="1">COM_VIRTUEMART_YES</option>
-        </param>
-    </params>-->
 	<vmconfig>
 		<fields name="params">
             <fieldset name="basic" addfieldpath="/administrator/components/com_virtuemart/fields">

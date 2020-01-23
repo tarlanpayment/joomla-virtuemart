@@ -81,6 +81,7 @@ Class plgVmPaymentTarlanPay extends vmPSPlugin {
 		$user_email = $order['details']['BT']->email;
 
 		$callbackUrl = JROUTE::_(JURI::root() . "index.php?option=com_virtuemart&view=pluginresponse&task=pluginresponsereceived&pm=" . $order['details']['BT']->virtuemart_paymentmethod_id . "&reference_id={$order['details']['BT']->order_number}");
+		$requestUrl = JURI::root();
 		
 		$postData = [
 			'reference_id' => $order_id,
@@ -90,7 +91,7 @@ Class plgVmPaymentTarlanPay extends vmPSPlugin {
 			'secret_key' => $secret_key,
 			'is_test' => $test_mode,
 			'back_url' => $callbackUrl,
-			'request_url' => 'http://'.$_SERVER['HTTP_HOST'],
+			'request_url' => $requestUrl,
 			'email' => $user_email
 		];
 		
